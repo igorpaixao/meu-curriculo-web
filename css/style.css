@@ -1,0 +1,156 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #201F1F;
+}
+
+body::-webkit-scrollbar { /*Estilos do scrollbar*/
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track { /*Estilo do fundo do scrollbar*/
+    background: #201F1F;
+}
+
+body::-webkit-scrollbar-thumb { /*Estilo do scroll*/
+    background-color: #ff0073;
+    border-radius: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+/*
+*************** Formatações Cabeçalho
+*/
+
+header {
+    width: 100%;
+    height: 100%;
+    background: url("../img/fundo-header.png") no-repeat left top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div#cabecalho {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+div#cabecalho img {
+    width: 125px;
+    height: 125px;
+    border-radius: 10px;
+}
+
+div#cabecalho ul {
+    display: flex;
+    margin-top: 40px;
+}
+
+div#cabecalho nav a {
+    padding: 10px 15px;
+    color: #fff;
+}
+
+div#cabecalho nav a:hover {
+    border-bottom: 2px solid #fff;
+    border-color: #ff0073;
+}
+
+div#cabecalho a#logo {
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    background: url("../img/minha-logo.png") no-repeat;
+    background-size: 125px;
+    text-indent: -20000px;
+}
+
+div#container-cabecalho {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div#sobre-mim {
+    width: 50%;
+}
+
+div#sobre-mim h1 {
+    font-size: 4em;
+    color: #fff;
+}
+
+div#sobre-mim p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+div#sobre-mim span.rosa {
+    color: #ff0073;
+    font-weight: bold;
+}
+
+@keyframes botao-cabecalho {
+    to {
+        box-shadow: 0px 0px 4px 1px #fff;
+    }
+}
+
+div#sobre-mim a {
+    
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: #ff0073;
+    animation-name: botao-cabecalho;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+div#sobre-mim a:hover {
+    animation: none;
+    box-shadow: 0px 0px 4px 2px #fff;
+}
+
+div#tecnologias {
+    width: 50%;
+    margin-top: 50px;
+}
+
+/*
+*************** Formatações Article
+*/
+
+article {
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+article section {
+    float: left;
+    margin-left: 80px;
+    margin-bottom: 30px;
+}
